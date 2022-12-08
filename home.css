@@ -28,6 +28,12 @@ body {
      align-items: center;
 }
 
+a {
+  text-decoration: none;
+  outline: none;
+  
+  
+}
 .container {
 
   width: 50%;
@@ -44,3 +50,8 @@ body {
   border: solid blue;
   
 }
+
+.item__wrapper--home {
+  grid-row: 1/3;
+}
+
