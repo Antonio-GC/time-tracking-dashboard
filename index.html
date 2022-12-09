@@ -1,151 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/home.css">
-  <title>Frontend Mentor | Time tracking dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/home.css" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="container__item">
+        <div class="item__wrapper--home">
+          <div class="home__wrapper">
+            <div class="imagen__wrapper">
+              <img src="/images/image-jeremy.png" alt="" class="home__imagen" />
+            </div>
 
-</head>
-<body>
-<main class="container">
-  <section class="container__item">
-    <div class="item__wrapper--home ">
-<div class="home__wrapper">
-  <div class="imagen__wrapper">
-    <img src="/images/image-jeremy.png" alt="" class="home__imagen">
-  </div>
+            <p class="home__text">Report for</p>
+            <h1 class="home__title">Jeremy Robson</h1>
+          </div>
+          <div class="beginning__wrapper">
+            <a href="" class="beginning__link">Daily</a>
+            <a href="" class="beginning__link">Weekly</a>
+            <a href="" class="beginning__link">Monthly</a>
+          </div>
+        </div>
+        <div class="item__wrapper">
+          <div class="item__imagen word"></div>
+          <div class="item__info">
+            <div class="item__container">
+              <span class="item__text">Work</span>
+              <span class="item__decoration">...</span>
+            </div>
 
-<p class="home__text">Report for</p>
-<h1 class="home__title">Jeremy Robson</h1>
-</div>
-<div class="beginning__wrapper">
-<a href="" class="beginning__link">Daily</a>
-<a href="" class="beginning__link">Weekly</a>
-<a href="" class="beginning__link">Monthly</a>
-</div>
-    </div>
-    <div class="item__wrapper ">
-<div class="item__imagen word">
+            <h3 class="item__number">32hrs</h3>
+            <p class="item__information">Last Week - 36hrs</p>
+          </div>
+        </div>
+        <div class="item__wrapper">
+          <div class="item__imagen play"></div>
+          <div class="item__info">
+            <div class="item__container">
+              <span class="item__text">Play</span>
+              <span class="item__decoration">...</span>
+            </div>
 
-</div>
-<div class="item__info">
-<span class="item__text">Work</span> <span class="item__decoration">...</span>
-<h3 class="item__number"> 32hrs </h3>
-  <p class="item__info">Last Week - 36hrs</p>
-</div>
-    </div>
-    <div class="item__wrapper">
-<div class="item__imagen play ">
+            <h3 class="item__number">10hrs</h3>
+            <p class="item__information">Last Week - 8hrs</p>
+          </div>
+        </div>
+        <div class="item__wrapper">
+          <div class="item__imagen study"></div>
+          <div class="item__info">
+            <div class="item__container">
+              <span class="item__text">Study</span>
+              <span class="item__decoration">...</span>
+            </div>
 
-</div>
-<div class="item__info">
-  <span class="item__text">Play</span> <span class="item__decoration">...</span>
-  <h3 class="item__number"> 10hrs </h3>
-    <p class="item__info">Last Week - 8hrs</p>
-</div>
-    </div>
-    <div class="item__wrapper ">
-<div class="item__imagen study">
+            <h3 class="item__number">4hrs</h3>
+            <p class="item__information">Last Week - 7hrs</p>
+          </div>
+        </div>
+        <div class="item__wrapper">
+          <div class="item__imagen excercise"></div>
+          <div class="item__info">
+            <div class="item__container">
+              <span class="item__text">Exercise</span>
+              <span class="item__decoration">...</span>
+            </div>
 
-</div>
-<div class="item__info">
-  <span></span> <span></span>
-  <h3></h3>
-    <p></p>
-</div>
-    </div>
-    <div class="item__wrapper ">
-<div class="item__imagen excercise">
+            <h3 class="item__number">4hrs</h3>
+            <p class="item__information">Last Week - 5hrs</p>
+          </div>
+        </div>
+        <div class="item__wrapper">
+          <div class="item__imagen social"></div>
+          <div class="item__info">
+            <div class="item__container">
+              <span class="item__text">Social</span>
+              <span class="item__decoration">...</span>
+            </div>
 
-</div>
-<div class="item__info">
-  <span></span> <span></span>
-  <h3></h3>
-    <p></p>
-</div>
-    </div>
-    <div class="item__wrapper ">
-<div class="item__imagen social">
+            <h3 class="item__number">5hrs</h3>
+            <p class="item__information">Last Week - 10hrs</p>
+          </div>
+        </div>
+        <div class="item__wrapper">
+          <div class="item__imagen self"></div>
+          <div class="item__info">
+            <div class="item__container">
+              <span class="item__text">Self Care</span>
+              <span class="item__decoration">...</span>
+            </div>
 
-</div>
-<div class="item__info">
-  <span></span> <span></span>
-  <h3></h3>
-    <p></p>
-</div>
-    </div>
-    <div class="item__wrapper ">
-<div class="item__imagen self">
-
-</div>
-<div class="item__info">
-  <span></span> <span></span>
-  <h3></h3>
-    <p></p>
-</div>
-    </div>
-  </section>
-</main>
-  <!-- 
-  
-
-  
-  
-  
-
-  
-  5hrs 
-  Previous - 7hrs 
- 
-  Previous - 36hrs 
-  103hrs 
-  Previous - 128hrs 
-
-  Play
-  1hr 
-  Previous - 2hrs 
-  10hrs 
-  Previous - 8hrs 
-  23hrs 
-  Previous - 29hrs 
-
-  Study
-  0hrs 
-  Previous - 1hr 
-  4hrs 
-  Previous - 7hrs 
-  13hrs 
-  Previous - 19hrs 
-
-  Exercise
-  1hr 
-  Previous - 1hr 
-  4hrs 
-  Previous - 5hrs 
-  11hrs 
-  Previous - 18hrs 
-
-  Social
-  1hr 
-  Previous - 3hrs 
-  5hrs 
-  Previous - 10hrs 
-  21hrs 
-  Previous - 23hrs 
-  Self Care
-  0hrs 
-  Previous - 1hr 
-  2hrs 
-  Previous - 2hrs 
-  7hrs 
-  Previous - 11hrs monthly -->
-
-
-</body>
+            <h3 class="item__number">2hrs</h3>
+            <p class="item__information">Last Week - 2hrs</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
