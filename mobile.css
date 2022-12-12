@@ -5,7 +5,6 @@
 
 :root {
   --Blue: hsl(246, 80%, 60%);
-
   --orange: #ff8b64;
   --Soft-blue: hsl(195, 74%, 62%);
   --Light-red: hsl(348, 100%, 68%);
@@ -23,8 +22,6 @@ body {
   font-size: 16px;
   font-family: "Rubik", sans-serif;
   background-color: var(--Very-dark-blue);
-  width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,18 +31,14 @@ a {
   text-decoration: none;
   outline: none;
 }
-.container {
-  width: 70%;
-  height: 60%;
-}
 
-.container__item {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  height: 100%;
-  gap: 20px;
-}
+/* .container__item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100%;
+    gap: 20px;
+  } */
 
 .item__wrapper--home {
   grid-row: 1/3;
@@ -56,15 +49,14 @@ a {
 }
 
 .home__wrapper {
+  display: flex;
+  column-gap: 25px;
+  align-items: center;
   background-color: var(--Blue);
   border-radius: 10px;
-  padding: 50px 20px 91px 20px;
+  padding: 50px 20px 50px 20px;
   position: relative;
   z-index: 2;
-}
-
-.imagen__wrapper {
-  margin-bottom: 50px;
 }
 
 .home__imagen {
@@ -78,10 +70,10 @@ a {
 
 .beginning__wrapper {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   background-color: var(--Dark-blue);
   border-radius: 10px;
-  padding: 25px 20px 9px 15px;
+  padding: 35px 20px 40px 15px;
   position: relative;
   top: -10px;
   z-index: 1;
@@ -144,6 +136,12 @@ a {
   border-radius: 5px;
 }
 
+.item__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .item__info {
   background-color: var(--Dark-blue);
   border-radius: 10px;
@@ -177,4 +175,47 @@ a {
 .item__information {
   color: var(--Desaturated-blue);
   margin-top: 15px;
+}
+
+@media (min-width: 1020px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .container__item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100%;
+    gap: 20px;
+  }
+
+  .item__wrapper--home {
+    grid-row: 1/3;
+  }
+
+  .home__wrapper {
+    display: block;
+    padding: 50px 20px 60px 20px;
+  }
+
+  .imagen__wrapper {
+    margin-bottom: 50px;
+  }
+
+  .beginning__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    padding: 25px 20px 45px 15px;
+  }
+
+  .item__info {
+    padding: 20px 20px 20px 15px;
+  }
+
+  .item__content {
+    display: block;
+  }
 }
